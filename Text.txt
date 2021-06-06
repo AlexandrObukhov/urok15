@@ -1,0 +1,4 @@
+06.06
+Изучал:
+Grid Layout
+Flex-box
