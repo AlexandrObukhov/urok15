@@ -4,7 +4,7 @@
 	/* display: flex; */
 	background-color: burlywood;
 	position: relative;
-	/* flex-wrap: wrap; */
+	/* flex-wrap: wrap; */ 
 	border: 5px solid brown;
 	font-size: 80px;
 	text-align: center;
@@ -17,7 +17,9 @@
 	flex-wrap: wrap;
 	height: 800px;
 	width: 800px;
-	margin: 100px 0px 0px 100px;
+	/* margin: 100px 0px 0px 100px; */
+	top: 100px;
+	left: 100px;
 
 }
 
@@ -28,7 +30,7 @@
 
 }
 
-.column1 {
+.board > :nth-child(even) {       /* .column1  */
 	background-color: #fff;
 	width: 100px;
 	height: 800px;
@@ -38,7 +40,7 @@
 
 }
 
-.column2 {
+.board > :nth-child(odd) {             /* .column2  */
 	background-color: #fff;
 	height: 800px;
 	width: 100px;
@@ -48,7 +50,7 @@
 	flex-direction: column-reverse;
 }
 
-.block:nth-of-type(odd) {
+ .block:nth-child(odd) {             /* .block:nth-of-type(odd) */
 	background-color: gray;
 }
 
@@ -60,7 +62,9 @@
 	flex-direction: column;
 	display: flex;
 	justify-content: space-around;
-	margin: 100px 0px 0px 80px;
+	/* margin: 100px 0px 0px 80px; */
+	top: 100px;
+	left: 80px;
 
 }
 .letters {
@@ -70,7 +74,9 @@
 	background-color: burlywood;
 	display: flex;
 	justify-content: space-around;
-	margin: 80px 0px 0px 100px;
+	/* margin: 80px 0px 0px 100px; */
+	top: 80px;
+	left: 100px;
 }
 
 .num, .let {
