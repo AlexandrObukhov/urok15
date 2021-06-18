@@ -44,6 +44,12 @@ a {
 	display: inline-block;
 	margin: 0 0 0 20px;
 	/*flex: none; вариант 1 */
+	cursor: pointer; /* стрелка становится рукой */
+}
+
+.fakebutton:hover {
+	background: #fff;
+	color: #f93c00;
 }
 
 /* footer */
