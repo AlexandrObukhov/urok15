@@ -55,7 +55,7 @@ button {
 
 table {
 	margin: 5px auto;
-	background-color: grey;
+	/* background-color: grey; */
 }
 
 .container {
@@ -82,7 +82,12 @@ margin: 0 auto;
 .month > td {
 	background-color: #fff;
 	font: bold 20px/30px Arial;
+	border: none;
 }
+
+/* .month {
+	border: none;
+} */
 
 td, th {
 	height: 30px;
@@ -94,6 +99,7 @@ td, th {
 	font: normal 20px/30px Arial;
 	position: relative;
 	background-color: rgb(243, 240, 240);
+	border: 1px solid grey;
 
 }
 
@@ -114,13 +120,13 @@ td, th {
 }	
 
 #left {
-	left: 158px;
+	left: 140px;
 	top: 73px;
 
 }
 
 #right {
-	right: 158px;
+	right: 140px;
 	top: 73px;
 }
 
