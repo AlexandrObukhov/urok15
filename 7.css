@@ -32,6 +32,9 @@ button {
 	height: 50px;
 	cursor: pointer;
 }
+.birthday {
+	background: red;
+}
 .screen {
 	position: fixed;
 	left: 0;
@@ -39,94 +42,68 @@ button {
 	top: 0;
 	bottom: 0;
 	background: transparent;
+	display: none;
+}
+.active {
+	display: block;
 }
 .modal {
 	position: absolute;
 	top: 150px;
-	width: 500px;
+	width: 740px;
 	left: 50%;
-	margin-left: -250px;
+	margin-left: -391px;
 	padding: 20px;
 	text-align: center;
 	background: white;
 	border: 1px solid black;
 }
-
-
-table {
-	margin: 5px auto;
-	/* background-color: grey; */
+.modal table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 5px;
 }
-
-.container {
-
-margin: 0 auto;
-width: 320px;
-height: 270px;
-/* border-radius: 5px;
-border: 2px solid grey; */
-/* background-color: red; */
-}
-
-.wrapper {
-/* background-color:#fff; */
-width: 300px;
-height: 255px;
-border: gray 1px solid;
-border-radius: 5px;
-padding: 3px;
-margin: 0 auto;
-
-}
-
-.month > td {
-	background-color: #fff;
-	font: bold 20px/30px Arial;
-	border: none;
-}
-
-/* .month {
-	border: none;
-} */
-
-td, th {
-	height: 30px;
-	width: 40px;
+.modal th {
+	height: 50px;
+	width: 100px;
 	box-sizing: border-box;
-	border: 2px solid transparent;
-	text-align: center;
-	vertical-align: middle;
-	font: normal 20px/30px Arial;
-	position: relative;
-	background-color: rgb(243, 240, 240);
-	border: 1px solid grey;
-
+	border: none;
+	font-weight: bold;
 }
-
-#input__screen {
-	background-color: rgb(207, 206, 206);
-	border-radius: 5px;
-	margin: 5px 0 0 0;
-	font: bold 20px/30px Arial;
+.modal td {
+	height: 100px;
+	width: 100px;
+	box-sizing: border-box;
+	border: 1px solid black;
 }
-
-#left, #right {
-	position: absolute;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	background-color: grey;
-
-}	
-
-#left {
-	left: 140px;
-	top: 73px;
-
+.modal .holiday {
+	border-color: red;
+	color: red;
 }
-
-#right {
-	right: 140px;
-	top: 73px;
+.modal .noourmonth {
+	border-color: transparent;
 }
-
+.modal .today {
+	background: blue;
+	color: white;
+}
+.modal .birthday {
+	background: red;
+	color: white;
+}
+.modal .workday:hover,
+.modal .holiday:hover {
+	background: green;
+	color: white;
+}
+.modal .header {
+	display: flex;
+	justify-content: space-between;
+}
+.modal .header span {
+	display: block;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	font-size: 30px;
+}
